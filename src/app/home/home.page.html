@@ -1,22 +1,53 @@
 <ion-content [fullscreen]="true">
 
     <ion-row class="ion-justify-content-center">
-        <ion-col size="12" size-lg="8">
+        <ion-col size="12" size-lg="4">
+            
+            <ion-row class="ion-justify-content-center">
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Funcionário</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-button routerLink="/cadastrar-funcionario">Cadastrar</ion-button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
 
-            <ion-row>
-                <ng-container *ngFor="let pais of this.paises">
-                    <ion-col size="12" size-lg="4">
-                        <ion-item lines="none" class="on-mouse" (click)="verDetalhesPais(pais.ccn3)">
-                            <ion-thumbnail slot="start">
-                                <img src="{{ pais.flags.png }}">
-                            </ion-thumbnail>
-                            <ion-label>
-                                <h2>{{ pais.name.common }}</h2>
-                                <h3>{{ pais.name.official }}</h3>
-                            </ion-label>
-                        </ion-item>
-                    </ion-col>
-                </ng-container>
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Funcionário</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-button routerLink="/listar-funcionario">Listar todos</ion-button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+                
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Funcionário</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-button routerLink="/excluir-funcionario">Excluir</ion-button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+
+                <ion-col size="12">
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-card-title>Funcionário</ion-card-title>
+                        </ion-card-header>
+                        <ion-card-content>
+                            <ion-button routerLink="/atualizar-funcionario">Atualizar</ion-button>
+                        </ion-card-content>
+                    </ion-card>
+                </ion-col>
+
             </ion-row>
 
         </ion-col>

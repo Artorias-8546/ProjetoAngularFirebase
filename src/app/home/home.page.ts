@@ -11,6 +11,18 @@ import { Router } from '@angular/router';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  
+  pessoa = {
+    foto: 'https://professionalmoron.com/wp-content/uploads/2012/05/alpaca-985158_640.jpg',
+    nome: 'Barrigudinha Seleide',
+    objetivo: 'Programador HTML & CSS',
+    contato: {
+      telefone: '15999999999',
+      email: 'seleide@hotmail',
+      github: 'github.com/seleide',
+      linkedin: 'linkedin.'
+    }
+  }
 
   isLoading: boolean = false;
   paises: any;
